@@ -1,7 +1,7 @@
 # flask_project
 
-Flask project made as a school assignment.
-It contains:
+An assignment to create Flask project.
+It had to meet following steps and requirements:
 
 1. Environment configuration for Flask
 
