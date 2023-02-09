@@ -26,6 +26,6 @@ The page should include:
   
       ● Artist name at the top
   
-7. After clicking on a song, please move to the next page, which will display the lyrics of the song
+7. After clicking on a song, move to the next page, which will display the lyrics of the song
 
-<img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech%20Stack&fontSize=16&lineHeight=8&lineCount=3&theme=cyberpunk&gap=8&line1=python,python,3776AB;pandas,pandas,150458;&line3=css3,css3,1572B6;html5,html5,E34F26;" alt="My Tech Stack" />
+
