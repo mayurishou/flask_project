@@ -1,0 +1,116 @@
+html {
+    background-color: black;
+    width: 100%
+}
+/* artist_list */
+/*not pretty but it works*/
+body {
+    background-color: black;
+    width: 100%
+  }
+
+div.container {
+    opacity: 1;
+    float: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px
+  }
+
+h1 {
+    text-align: center;
+    float: center;
+    background-color: green;
+    color: black;
+    width: 100%;
+    font-size: 60px
+  }
+
+a.menu {
+    background-color: brown;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px
+}
+
+a.menu1 {
+    background-color: pink;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px
+}
+
+.menu:hover {
+    background-color: brown;
+    color: black;
+    pointer-events: visiblePainted;
+}
+
+.menu1:hover {
+    background-color: pink;
+    color: black;
+    pointer-events: visiblePainted;
+}
+
+.image {
+    text-align: center;
+    float: center;
+    height: 200px;
+    width: 200px;
+}
+
+h2 {
+    text-align: center;
+    float: center;
+    background-color: black;
+    height: 100%;
+    width: 200px;
+}
+
+
+/*songs_list*/
+
+.image_songs {
+    float: center;
+    width: 50%
+}
+
+a.table:hover {
+    background-color: green;
+    color: black;
+}
+
+td {
+    color: white;
+    background-color: rgb(12, 12, 12);
+    margin: 20px;
+    vertical-align: center;
+    padding: 10px
+}
+
+
+/*lyrics*/
+
+div.title {
+    text-align: center;
+    background-color: green;
+}
+
+div.lyrics {
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgb(15, 15, 15);
+}
+

@@ -1,0 +1,15 @@
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+
+<body>
+
+{% for key, value in df1.iterrows() %}
+
+  <div class = "title">{{value['title']}}</div>
+  <div class = "lyrics">{{value['lyrics']}}</div>
+
+  
+{%endfor%}
+
+</body>

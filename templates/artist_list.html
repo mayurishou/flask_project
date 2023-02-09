@@ -1,0 +1,38 @@
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+
+<h1>BASE OF ARTISTS</h1>
+<body>
+
+{% block content %}
+  <div class="container" >
+      {% for key, value in df.iterrows() %}
+        {%if value['counter'] == 1%}
+          <h2> 
+            <a class = "menu1" href = 'display_songs/{{value['artist']}}'>{{value['artist']}} ({{value['counter']}})</a>
+          {%if value['img'] == 'nan' %}
+              <img href = "/static/black_square.jpg"> 
+              <img src="/static/black_square.jpg">
+          {% else %}
+              <img href = {{value['img']}}>
+              <img src={{value['img']}} class = "image">
+            {%endif%}   
+          </h2>
+        {%else%}
+          <h2> 
+            <a class = "menu" href = 'display_songs/{{value['artist']}}'>{{value['artist']}} ({{value['counter']}})</a>
+            {%if value['img'] == nan %}
+              <img class = "no_image">
+            {% else %}
+              <img href = {{value['img']}}>
+              <img src={{value['img']}} class = "image">
+            {%endif%} 
+          </h2>
+        {%endif%} 
+      {% endfor %}
+  </div>
+{% endblock %}
+
+
+</body>

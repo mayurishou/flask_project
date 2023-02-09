@@ -1,0 +1,35 @@
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+
+{% block content %}
+<body>
+  <table style="width:50%", border="1">
+    <tr style="font-weight: bold;">
+      <td>Title</td>
+      <td>Language</td>
+      <td>Genre</td>
+      <td>Year</td>
+      <td>Lyrics</td>
+    </tr>
+    {% for key, value in df1.iterrows() %}    
+    <tr>
+        <td>{{value['title']}}</td>               
+        <td>{{value['language']}}</td>
+        <td>{{value['top genre']}}</td>
+        <td>{{value['year']}}</td>      
+        <td><a href = 'display_lyrics/{{value[1]}}' class = "table">Lyrics</a></td>          
+    </tr>
+    {% endfor %}   
+    {% for key, value in df3.iterrows() %}
+    <div class = "image_songs">
+    <div class = "name">{{value['artist']}}</div>
+    <img href = {{value[1]}}\>
+    <img src={{value[1]}}
+        alt="">
+    </div>
+  {% endfor %} 
+</table>
+ 
+</body>
+{% endblock %}
