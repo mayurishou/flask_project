@@ -5,7 +5,7 @@ It contains:
 
 1. Environment configuration for Flask
 
-2. Working with given database of artists
+2. Working with given database of artists (dane_spotify.csv)
 
 3. Creating a basic Flask app
 
